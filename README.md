@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+While both iterate over an array, `.forEach` only iterates, while `.map` returns an array as well.
+
 2. What is the difference between a function and a method?
+
+A function is more general, whereas a method is a function that is in an object or class.
 
 3. What is closure?
 
+A closure is the concept that a function has access to state in its outer scope or environment, even if the function is invoked after that scope has been executed.
+
 4. Describe the four rules of the 'this' keyword.
 
+   1. Global — `this` refers to the global or window object, since there is no other object for it to reference
+   2. Implicit — `this` refers to whatever object is to the left of the method being called. e.g. `foo.bar()` <-- this referenced inside of 'bar' would refer to the 'foo' object.
+   3. Explicit -- `this` refers to whatever object it was explicitly bound to using `.bind()`, `.call()`, or `.apply()`.
+   4. New — this refers to whatever object was created using the `new` keyword along with a constructor function or class. e.g. `let myObj = new CoolObj()` ←- `this` refers to `myObj`
+
 5. Why do we need super() in an extended class?
+
+`super()` effectively does the same thing as `ParentClass.call(this, args)` in a traditional constructor function. `super()` ensures that the class receives all of the properties of its parent class.
 
 ## Project Set up
 
