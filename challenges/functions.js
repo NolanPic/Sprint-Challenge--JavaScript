@@ -40,11 +40,12 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 
 
 // ==== Closures ==== 
+console.log('********** Closures **********'); // for logging sanity
 
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation: When nestedFunction is called, it is given reference to all the state in the scope 
-// within which it was created. ('closure'). This is a feature that not many languages have.
+// within which it was created ('closure'). This is a feature that not many languages have.
 
 
 const external = "I'm outside the function";
